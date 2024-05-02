@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import { useDark, useToggle } from '@vueuse/core'
-
+import IconEpApple from '~icons/ep/apple'
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 </script>
@@ -11,7 +11,7 @@ const toggleDark = useToggle(isDark)
     <el-header>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
-      <ElButton @click="toggleDark()">Theme</ElButton>
+      <ElButton :icon="IconEpApple" @click="toggleDark()" />
     </el-header>
     <el-main><RouterView /></el-main>
   </el-container>
