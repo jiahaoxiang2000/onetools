@@ -12,14 +12,14 @@ const toggleDark = useToggle(isDark)
       <el-row>
         <el-col :span="16">
           <el-space size="large">
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
+            <el-link href="/"> Home </el-link>
+            <el-link href="/about"> About </el-link>
           </el-space>
         </el-col>
         <el-col :span="8" style="text-align: right" :gutter="10">
           <el-space size="large">
-            <span v-if="isDark">Dark</span>
-            <span v-else>Light</span>
+            <el-text v-if="isDark">Dark</el-text>
+            <el-text v-else>Light</el-text>
             <ElButton type="info" :icon="Open" circle @click="toggleDark()" />
           </el-space>
         </el-col>
