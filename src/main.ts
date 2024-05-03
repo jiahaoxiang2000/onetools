@@ -1,4 +1,5 @@
 import 'element-plus/theme-chalk/dark/css-vars.css'
+import 'md-editor-v3/lib/style.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

@@ -8,9 +8,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vue from '@vitejs/plugin-vue'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import IconsResolver from 'unplugin-icons/resolver'
-import path from 'path'
 
-const pathSrc = path.resolve(__dirname, 'src')
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
