@@ -9,7 +9,7 @@ const toggleDark = useToggle(isDark)
 <template>
   <el-container>
     <el-header>
-      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/">Home test</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <ElButton :icon="IconEpApple" @click="toggleDark()" />
     </el-header>
