@@ -41,7 +41,8 @@ const handleChange: UploadProps['onChange'] = (file) => {
 const transform = () => {
   let src = cv.imread('originFigure')
   let dst = new cv.Mat()
-  cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY)
+  let rect = new cv.Rect(200, 200, 200, 200)
+  dst = src.roi(rect)
   cv.imshow('canvasOutput', dst)
   src.delete()
   dst.delete()
